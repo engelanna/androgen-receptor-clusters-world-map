@@ -8,3 +8,6 @@ Hierachical clustering chosen as the method because:
 
 1. Underlying clusters cannot be assumed to be globular.
 2. No need to specify number of clusters
+
+Reference genome selected according to https://lh3.github.io/2017/11/13/which-human-reference-genome-to-use
+(why?)

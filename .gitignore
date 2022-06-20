@@ -1,1 +1,2 @@
-bam_output/*.bam
+output/bam/*
+reference_genomes/*
