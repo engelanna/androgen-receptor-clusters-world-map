@@ -3,11 +3,10 @@ import subprocess
 
 
 def fasta_to_txt_clustering_input(
-    input_fasta_dir_path="../assets/fasta",
-    output_dir_path="../assets/clustering_txt_input",
+    input_fasta_dir_path="../assets/fasta", output_txt_dir_path="../assets/txt"
 ):
     for input_fasta_file_name in [
-        f for f in os.listdir(input_fasta_dir_path) if not f.startswith(".")
+        file for file in os.listdir(input_fasta_dir_path) if not file.startswith(".")
     ]:
         input_fasta_file_path = f"{input_fasta_dir_path}/{input_fasta_file_name}"
 
@@ -16,7 +15,7 @@ def fasta_to_txt_clustering_input(
         sequence = sequence.rstrip("N")
 
         output_file_path = (
-            f"{output_dir_path}/{input_fasta_file_name.rsplit('.', 1)[0]}.txt"
+            f"{output_txt_dir_path}/{input_fasta_file_name.rsplit('.', 1)[0]}.txt"
         )
         output_file = open(output_file_path, "w")
         output_file.write(f"{sequence}\n")

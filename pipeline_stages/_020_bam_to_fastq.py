@@ -8,7 +8,7 @@ def bam_to_fastq(
     output_fastq_dir_path="../assets/fastq",
 ):
     for input_bam_filename in [
-        f for f in os.listdir(input_bam_dir_path) if not f.startswith(".")
+        file for file in os.listdir(input_bam_dir_path) if not file.startswith(".")
     ]:
         input_bam_file_path = f"{input_bam_dir_path}/{input_bam_filename}"
         output_fastq_file_path = (
