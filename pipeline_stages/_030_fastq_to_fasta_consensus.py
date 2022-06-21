@@ -2,7 +2,7 @@ import os
 import subprocess
 
 
-def fastq_to_fasta(
+def fastq_to_fasta_consensus(
     input_fastq_dir_path="../assets/fastq", output_fasta_dir_path="../assets/fasta"
 ):
     for input_fastq_file_name in os.listdir(input_fastq_dir_path):
@@ -20,4 +20,4 @@ def fastq_to_fasta(
 
 
 if __name__ == "__main__":
-    fastq_to_fasta()
+    fastq_to_fasta_consensus()

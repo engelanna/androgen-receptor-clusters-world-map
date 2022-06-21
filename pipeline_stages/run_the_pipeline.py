@@ -1,0 +1,9 @@
+from _010_download_bam_files import download_bam_files
+from _020_bam_to_fastq import bam_to_fastq
+from _030_fastq_to_fasta_consensus import fastq_to_fasta_consensus
+from _040_fasta_to_txt_clustering_input import fasta_to_txt_clustering_input
+
+download_bam_files()
+bam_to_fastq()
+fastq_to_fasta_consensus()
+fasta_to_txt_clustering_input()
