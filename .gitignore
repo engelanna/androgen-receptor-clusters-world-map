@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+
+assets/bam/*.bam
+assets/fasta/*.fasta
+assets/fastq/*.fastq
+assets/reference_genomes/*.fa
+assets/reference_genomes/*.fa.fai
+pipeline_stages/*.crai
