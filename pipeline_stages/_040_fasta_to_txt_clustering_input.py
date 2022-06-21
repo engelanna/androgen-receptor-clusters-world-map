@@ -6,8 +6,9 @@ def fasta_to_txt_clustering_input(
     input_fasta_dir_path="../assets/fasta",
     output_dir_path="../assets/clustering_txt_input",
 ):
-
-    for input_fasta_file_name in os.listdir(input_fasta_dir_path):
+    for input_fasta_file_name in [
+        f for f in os.listdir(input_fasta_dir_path) if not f.startswith(".")
+    ]:
         input_fasta_file_path = f"{input_fasta_dir_path}/{input_fasta_file_name}"
 
         sequence = open(input_fasta_file_path, "r").readlines()[1].strip()

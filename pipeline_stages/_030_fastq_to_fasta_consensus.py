@@ -5,7 +5,9 @@ import subprocess
 def fastq_to_fasta_consensus(
     input_fastq_dir_path="../assets/fastq", output_fasta_dir_path="../assets/fasta"
 ):
-    for input_fastq_file_name in os.listdir(input_fastq_dir_path):
+    for input_fastq_file_name in [
+        f for f in os.listdir(input_fastq_dir_path) if not f.startswith(".")
+    ]:
         output_fasta_file_path = (
             f"{output_fasta_dir_path}/{input_fastq_file_name.rsplit('.', 1)[0]}.fasta"
         )

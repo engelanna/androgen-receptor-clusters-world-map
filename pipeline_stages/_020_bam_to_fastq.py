@@ -7,7 +7,9 @@ def bam_to_fastq(
     reference_genome_file_path="../assets/reference_genomes/hg38.fa",
     output_fastq_dir_path="../assets/fastq",
 ):
-    for input_bam_filename in os.listdir(input_bam_dir_path):
+    for input_bam_filename in [
+        f for f in os.listdir(input_bam_dir_path) if not f.startswith(".")
+    ]:
         input_bam_file_path = f"{input_bam_dir_path}/{input_bam_filename}"
         output_fastq_file_path = (
             f"{output_fastq_dir_path}/{input_bam_filename.rsplit('.', 1)[0]}.fastq"
