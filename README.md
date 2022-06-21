@@ -11,3 +11,5 @@ Hierachical clustering chosen as the method because:
 
 Reference genome selected according to https://lh3.github.io/2017/11/13/which-human-reference-genome-to-use
 (why?)
+
+https://www.open-mpi.org/software/ompi/v4.1/

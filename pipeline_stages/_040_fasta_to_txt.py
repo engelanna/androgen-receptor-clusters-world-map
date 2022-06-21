@@ -2,7 +2,7 @@ import os
 import subprocess
 
 
-def fasta_to_txt_clustering_input(
+def fasta_to_txt(
     input_fasta_dir_path="../assets/fasta", output_txt_dir_path="../assets/txt"
 ):
     for input_fasta_file_name in [
@@ -23,4 +23,4 @@ def fasta_to_txt_clustering_input(
 
 
 if __name__ == "__main__":
-    fasta_to_txt_clustering_input()
+    fasta_to_txt()
