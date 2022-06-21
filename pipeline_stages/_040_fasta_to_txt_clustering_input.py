@@ -19,7 +19,7 @@ def fasta_to_txt_clustering_input(
             f"{output_dir_path}/{input_fasta_file_name.rsplit('.', 1)[0]}.txt"
         )
         output_file = open(output_file_path, "w")
-        output_file.write(sequence)
+        output_file.write(f"{sequence}\n")
         output_file.close()
 
 
