@@ -4,7 +4,7 @@ import subprocess
 
 def many_txt_to_single_fasta(
     input_txt_files_dir_path="../assets/txt",
-    output_fasta_file_path="../assets/fasta/testData.fasta",
+    output_fasta_file_path="../assets/fasta/clustering_input/testData.fasta",
 ):
     output_fasta_file = open(output_fasta_file_path, "w")
 

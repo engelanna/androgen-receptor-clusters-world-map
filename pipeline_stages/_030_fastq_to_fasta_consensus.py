@@ -3,7 +3,8 @@ import subprocess
 
 
 def fastq_to_fasta_consensus(
-    input_fastq_dir_path="../assets/fastq", output_fasta_dir_path="../assets/fasta"
+    input_fastq_dir_path="../assets/fastq",
+    output_fasta_dir_path="../assets/fasta/consensus_sequences",
 ):
     for input_fastq_file_name in [
         file for file in os.listdir(input_fastq_dir_path) if not file.startswith(".")
