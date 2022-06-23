@@ -35,7 +35,6 @@ ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/d
 ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/data/FIN/HG00288/alignment/HG00288.alt_bwamem_GRCh38DH.20150718.FIN.low_coverage.cram
 ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/data/FIN/HG00290/alignment/HG00290.alt_bwamem_GRCh38DH.20150718.FIN.low_coverage.cram
 ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/data/FIN/HG00302/alignment/HG00302.alt_bwamem_GRCh38DH.20150718.FIN.low_coverage.cram
-ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/data/FIN/HG00303/alignment/HG00303.alt_bwamem_GRCh38DH.20150718.FIN.low_coverage.cram
 ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/data/FIN/HG00304/alignment/HG00304.alt_bwamem_GRCh38DH.20150718.FIN.low_coverage.cram
 ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/data/FIN/HG00306/alignment/HG00306.alt_bwamem_GRCh38DH.20150718.FIN.low_coverage.cram
 ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/data/FIN/HG00308/alignment/HG00308.alt_bwamem_GRCh38DH.20150718.FIN.low_coverage.cram
@@ -122,7 +121,6 @@ ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/d
 ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/data/GBR/HG00113/alignment/HG00113.alt_bwamem_GRCh38DH.20150718.GBR.low_coverage.cram
 ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/data/GBR/HG00114/alignment/HG00114.alt_bwamem_GRCh38DH.20150718.GBR.low_coverage.cram
 ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/data/GBR/HG00115/alignment/HG00115.alt_bwamem_GRCh38DH.20150718.GBR.low_coverage.cram
-ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/data/GBR/HG00116/alignment/HG00116.alt_bwamem_GRCh38DH.20150718.GBR.low_coverage.cram
 ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/data/GBR/HG00117/alignment/HG00117.alt_bwamem_GRCh38DH.20150718.GBR.low_coverage.cram
 ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/data/GBR/HG00118/alignment/HG00118.alt_bwamem_GRCh38DH.20150718.GBR.low_coverage.cram
 ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/data/GBR/HG00119/alignment/HG00119.alt_bwamem_GRCh38DH.20150718.GBR.low_coverage.cram
