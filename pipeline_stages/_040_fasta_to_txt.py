@@ -12,12 +12,11 @@ def fasta_to_txt(
         input_fasta_file_path = f"{input_fasta_dir_path}/{input_fasta_file_name}"
         sequence = open(input_fasta_file_path, "r").readlines()[1].strip()
 
-        output_file_path = (
+        output_txt_file_path = (
             f"{output_txt_dir_path}/{input_fasta_file_name.rsplit('.', 1)[0]}.txt"
         )
-        output_file = open(output_file_path, "w")
-        output_file.write(f"{sequence}\n")
-        output_file.close()
+        with open(output_txt_file_path, "w") as output_txt_file:
+            output_txt_file.write(f"{sequence}\n")
 
 
 if __name__ == "__main__":
