@@ -14,9 +14,9 @@ def fastq_to_fasta_consensus(
         )
         input_fastq_file_path = f"{input_fastq_dir_path}/{input_fastq_file_name}"
 
-        print(
-            subprocess.run(
-                f"seqtk seq -aQ64 -q20 -n N {input_fastq_file_path} > {output_fasta_file_path}",
+        print(  # seqtk flags: https://github.com/lh3/seqtk
+            subprocess.run(  # mask Q < 20 bases with lowercase
+                f"seqtk seq -aQ64 -q20 {input_fastq_file_path} > {output_fasta_file_path}",
                 shell=True,
             )
         )
