@@ -16,6 +16,7 @@ def many_txt_to_single_fasta(
         ]
     ):
         input_txt_file_path = f"{input_txt_files_dir_path}/{input_txt_file_name}"
+        print(f"processing {input_txt_file_path}")
 
         sequence = open(input_txt_file_path, "r").readlines()[0]
         sequence_header = input_txt_file_name.replace(".txt", "")
