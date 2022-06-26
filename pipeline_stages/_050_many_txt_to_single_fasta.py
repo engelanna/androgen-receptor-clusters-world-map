@@ -18,7 +18,7 @@ def many_txt_to_single_fasta(
         sequence = open(input_txt_file_path, "r").readlines()[0]
         sequence_header = input_txt_file_name.replace(".txt", "")
 
-        output_fasta_file.writelines([f"> {sequence_header}\n", f"{sequence}"])
+        output_fasta_file.writelines([f">{sequence_header}\n", f"{sequence}"])
 
     output_fasta_file.close()
 
