@@ -8,11 +8,13 @@ def many_txt_to_single_fasta(
 ):
     output_fasta_file = open(output_fasta_file_path, "w")
 
-    for input_txt_file_name in [
-        file
-        for file in os.listdir(input_txt_files_dir_path)
-        if not file.startswith(".")
-    ]:
+    for input_txt_file_name in sorted(
+        [
+            file
+            for file in os.listdir(input_txt_files_dir_path)
+            if not file.startswith(".")
+        ]
+    ):
         input_txt_file_path = f"{input_txt_files_dir_path}/{input_txt_file_name}"
 
         sequence = open(input_txt_file_path, "r").readlines()[0]
