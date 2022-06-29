@@ -1,12 +1,11 @@
 [tool.poetry]
-name = "biopython-playground"
+name = "androgen-receptor-clustering"
 version = "0.1.0"
 description = ""
 authors = ["Anna Julia Engel <anna.julia.engel@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
-biopython = "^1.79"
 
 [tool.poetry.dev-dependencies]
 ipython = "7.34"
