@@ -13,6 +13,9 @@ def fasta_to_txt(
         print(f"processing {input_fasta_file_path}")
 
         sequence = open(input_fasta_file_path, "r").readlines()[1].strip()
+        sequence = sequence.lstrip("N")
+        sequence = sequence.rstrip("N")
+
         output_txt_file_path = (
             f"{output_txt_dir_path}/{input_fasta_file_name.rsplit('.', 1)[0]}.txt"
         )
