@@ -1,7 +1,0 @@
-name:
-  - androgen-receptor-clustering
-channels:
-  - conda-forge
-dependencies:
-  - python=3.8
-  - pandas
