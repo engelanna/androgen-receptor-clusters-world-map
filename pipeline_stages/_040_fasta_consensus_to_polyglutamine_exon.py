@@ -2,7 +2,7 @@ import os
 import subprocess
 
 
-def fasta_to_txt(
+def fasta_consensus_to_polyglutamine_exon(
     input_fasta_dir_path="../assets/fasta/consensus_sequences",
     output_txt_dir_path="../assets/txt",
     intron_character="n",
@@ -26,4 +26,4 @@ def fasta_to_txt(
 
 
 if __name__ == "__main__":
-    fasta_to_txt()
+    fasta_consensus_to_polyglutamine_exon()

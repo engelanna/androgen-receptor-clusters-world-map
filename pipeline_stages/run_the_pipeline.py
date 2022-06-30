@@ -1,11 +1,13 @@
 from _010_download_bam_files import download_bam_files
 from _020_bam_to_fastq import bam_to_fastq
 from _030_fastq_to_fasta_consensus import fastq_to_fasta_consensus
-from _040_fasta_to_txt import fasta_to_txt
-from _050_many_txt_to_single_fasta import many_txt_to_single_fasta
+from _040_fasta_consensus_to_polyglutamine_exon import (
+    fasta_consensus_to_polyglutamine_exon,
+)
+from _050_multiple_fasta_to_single_multifasta import multiple_fasta_to_single_multifasta
 
 download_bam_files()
 bam_to_fastq()
 fastq_to_fasta_consensus()
-fasta_to_txt()
-many_txt_to_single_fasta()
+fasta_consensus_to_polyglutamine_exon()
+multiple_fasta_to_single_multifasta()
