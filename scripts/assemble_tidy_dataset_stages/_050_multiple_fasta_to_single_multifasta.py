@@ -14,7 +14,7 @@ def multiple_fasta_to_single_multifasta(
         input_fasta_file_path = f"{input_fasta_dir_path}/{input_fasta_file_name}"
         print(f"processing {input_fasta_file_path}")
 
-        sequence = open(input_fasta_file_path, "r").readlines()[0]
+        sequence = open(input_fasta_file_path, "r").readlines()[1]
         sequence_header = input_fasta_file_name.replace(".fasta", "")
 
         output_fasta_file.writelines([f">{sequence_header}\n", f"{sequence}"])
