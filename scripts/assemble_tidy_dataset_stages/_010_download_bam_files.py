@@ -3,8 +3,8 @@ import time
 
 
 def download_bam_files(
-    input_urls_file_path="../assets/download_bam_files_input_urls.txt",
-    output_bam_dir_path="../assets/bam",
+    input_urls_file_path="assets/txt/download_bam_files_input_urls.txt",
+    output_bam_dir_path="assets/bam",
 ):
     with open(input_urls_file_path, "r") as file:
         for url in [line.rstrip("\n") for line in file if len(line) > 1]:

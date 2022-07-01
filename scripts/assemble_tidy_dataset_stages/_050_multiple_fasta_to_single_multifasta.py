@@ -3,8 +3,8 @@ import subprocess
 
 
 def multiple_fasta_to_single_multifasta(
-    input_fasta_dir_path="../assets/fasta/",
-    output_fasta_file_path="../assets/fasta/clustering_input/cd_hit_input.fasta",
+    input_fasta_dir_path="assets/fasta/cag_tract_exons",
+    output_fasta_file_path="assets/fasta/clustering_input/cd_hit_input.fasta",
 ):
     output_fasta_file = open(output_fasta_file_path, "w")
 
@@ -15,7 +15,7 @@ def multiple_fasta_to_single_multifasta(
         print(f"processing {input_fasta_file_path}")
 
         sequence = open(input_fasta_file_path, "r").readlines()[0]
-        sequence_header = input_fasta_file_name.replace(".txt", "")
+        sequence_header = input_fasta_file_name.replace(".fasta", "")
 
         output_fasta_file.writelines([f">{sequence_header}\n", f"{sequence}"])
 

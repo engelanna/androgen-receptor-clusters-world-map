@@ -2,9 +2,9 @@ import os
 import subprocess
 
 
-def fastq_to_fasta_consensus(
-    input_fastq_dir_path="../assets/fastq",
-    output_fasta_dir_path="../assets/fasta/consensus_sequences",
+def fastq_to_fasta_consensi(
+    input_fastq_dir_path="assets/fastq",
+    output_fasta_dir_path="assets/fasta/consensus_sequences",
 ):
     for input_fastq_file_name in sorted(
         [file for file in os.listdir(input_fastq_dir_path) if not file.startswith(".")]
@@ -23,4 +23,4 @@ def fastq_to_fasta_consensus(
 
 
 if __name__ == "__main__":
-    fastq_to_fasta_consensus()
+    fastq_to_fasta_consensi()

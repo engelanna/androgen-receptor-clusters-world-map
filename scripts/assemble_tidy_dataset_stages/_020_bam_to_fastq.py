@@ -3,9 +3,9 @@ import subprocess
 
 
 def bam_to_fastq(
-    input_bam_dir_path="../assets/bam",
-    reference_genome_file_path="../assets/reference_genomes/hg38.fa",
-    output_fastq_dir_path="../assets/fastq",
+    input_bam_dir_path="assets/bam",
+    reference_genome_file_path="assets/fasta/reference_genomes/hg38.fa",
+    output_fastq_dir_path="assets/fastq",
 ):
     for input_bam_filename in sorted(
         [file for file in os.listdir(input_bam_dir_path) if not file.startswith(".")]
