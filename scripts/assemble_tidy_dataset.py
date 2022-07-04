@@ -1,4 +1,4 @@
-from . import (
+from .assemble_tidy_dataset_stages import (
     download_bam_files,
     bam_to_fastq,
     fastq_to_fasta_consensi,

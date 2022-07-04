@@ -1,9 +1,9 @@
 from typing import List
 
 
-def exon_with_the_most_cag_repeats(exons: List):
+def extract_exon_with_the_most_cag_repeats(exons: List):
     max_cag_repeat_count = 0
-    max_cag_repeat_index = -1
+    max_cag_repeat_index = None
 
     for index, exon in enumerate(exons):
         lowercase_exon = exon.lower()

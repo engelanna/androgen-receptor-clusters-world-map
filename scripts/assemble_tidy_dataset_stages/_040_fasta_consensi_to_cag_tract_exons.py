@@ -1,7 +1,7 @@
 import os
 import subprocess
 
-from src.extractors import exon_with_the_most_cag_repeats
+from src.extractors import extract_exon_with_the_most_cag_repeats
 
 
 def fasta_consensi_to_cag_tract_exons(
@@ -16,7 +16,7 @@ def fasta_consensi_to_cag_tract_exons(
 
         sequence = open(input_fasta_file_path, "r").readlines()[1].strip()
         exon_list = [exon for exon in sequence.split(intron_character) if exon]
-        cag_exon = exon_with_the_most_cag_repeats(exon_list)
+        cag_exon = extract_exon_with_the_most_cag_repeats(exon_list)
 
         fasta_header = input_fasta_file_name.rsplit(".", 1)[0]
         output_fasta_file_path = f"{output_fasta_dir_path}/{fasta_header}.fasta"
