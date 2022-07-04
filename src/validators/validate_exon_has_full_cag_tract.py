@@ -10,15 +10,19 @@ def cag_repeat_count(exon: str):
 
 # The spec is at test/validators/validate_exon_has_full_cag_tract
 def validate_exon_has_full_cag_tract(exon: str):
-    exon = exon.lower()
-
     try:
+        exon = exon.lower()
+        left_limit_of_7_cag_repeats = exon.index("cag" * 7)
+        right_limit_of_7_cag_repeats = exon.rindex("cag" * 7) + 21
         if (
             cag_repeat_count(exon) < 7
-            or exon.index("cag") < 2
-            or exon[exon.index("cag") - 2] == "a"
-            or len(exon) - exon.rindex("cag") < 6
-            or exon[exon.rindex("cag") + 5] != "a"
+            or left_limit_of_7_cag_repeats < 2
+            or (
+                left_limit_of_7_cag_repeats == 2
+                and exon[left_limit_of_7_cag_repeats - 2] == "a"
+            )
+            or (len(exon) - right_limit_of_7_cag_repeats) < 3
+            or (len(exon) - right_limit_of_7_cag_repeats == 3 and exon[-1] != "a")
         ):
             return False
     except IndexError:
