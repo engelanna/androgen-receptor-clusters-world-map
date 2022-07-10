@@ -14,12 +14,14 @@ def fastq_to_fasta_consensi(
         )
         input_fastq_file_path = f"{input_fastq_dir_path}/{input_fastq_file_name}"
 
-        print(  # seqtk flags: https://github.com/lh3/seqtk
-            subprocess.run(  # mask Q < 20 bases with lowercase
-                f"seqtk seq -aQ64 -q20 {input_fastq_file_path} > {output_fasta_file_path}",
-                shell=True,
-            )
+        command = "".join(  # seqtk flags: https://github.com/lh3/seqtk
+            [
+                f"seqtk seq -aQ64 -q20 {input_fastq_file_path}",  # downcase Q<20 bases
+                f" | seqtk cutN - > {output_fasta_file_path}",  # cut on 100 introns (default)
+            ]
         )
+
+        print(subprocess.run(command, shell=True))
 
 
 if __name__ == "__main__":
