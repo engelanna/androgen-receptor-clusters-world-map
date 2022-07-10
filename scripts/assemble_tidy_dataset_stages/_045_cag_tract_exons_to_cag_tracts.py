@@ -1,21 +1,15 @@
 import os
 
 from src.extractors import extract_full_cag_tract
+from src.loaders import just_the_nonhidden_files
 from src.validators import validate_exon_has_full_cag_tract
-
-
-_just_the_nonhidden_files = lambda dir: [
-    file for file in os.listdir(dir) if not file.startswith(".")
-]
 
 
 def cag_tract_exons_to_cag_tracts(
     input_fasta_dir_path="assets/fasta/cag_tract_exons",
     output_fasta_dir_path="assets/fasta/cag_tracts",
 ):
-    for input_fasta_file_name in sorted(
-        _just_the_nonhidden_files(input_fasta_dir_path)
-    ):
+    for input_fasta_file_name in sorted(just_the_nonhidden_files(input_fasta_dir_path)):
         input_fasta_file_path = f"{input_fasta_dir_path}/{input_fasta_file_name}"
 
         with open(input_fasta_file_path, "r") as input_fasta_file:

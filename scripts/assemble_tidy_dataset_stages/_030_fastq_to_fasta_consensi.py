@@ -1,14 +1,14 @@
 import os
 import subprocess
 
+from src.loaders import just_the_nonhidden_files
+
 
 def fastq_to_fasta_consensi(
     input_fastq_dir_path="assets/fastq",
     output_fasta_dir_path="assets/fasta/consensus_sequences",
 ):
-    for input_fastq_file_name in sorted(
-        [file for file in os.listdir(input_fastq_dir_path) if not file.startswith(".")]
-    ):
+    for input_fastq_file_name in sorted(just_the_nonhidden_files(input_fastq_dir_path)):
         output_fasta_file_path = (
             f"{output_fasta_dir_path}/{input_fastq_file_name.rsplit('.', 1)[0]}.fasta"
         )

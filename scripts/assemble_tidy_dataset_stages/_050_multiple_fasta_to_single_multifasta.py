@@ -1,6 +1,8 @@
 import os
 import subprocess
 
+from src.loaders import just_the_nonhidden_files
+
 
 def multiple_fasta_to_single_multifasta(
     input_fasta_dir_path="assets/fasta/cag_tract_exons",
@@ -8,9 +10,7 @@ def multiple_fasta_to_single_multifasta(
 ):
     output_fasta_file = open(output_fasta_file_path, "w")
 
-    for input_fasta_file_name in sorted(
-        [file for file in os.listdir(input_fasta_dir_path) if not file.startswith(".")]
-    ):
+    for input_fasta_file_name in sorted(just_the_nonhidden_files(input_fasta_dir_path)):
         input_fasta_file_path = f"{input_fasta_dir_path}/{input_fasta_file_name}"
         print(f"processing {input_fasta_file_path}")
 

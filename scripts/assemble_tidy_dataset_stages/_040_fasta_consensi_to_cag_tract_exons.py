@@ -2,7 +2,10 @@ import os
 import subprocess
 
 from src.extractors import extract_exon_with_the_most_cag_repeats
-from src.loaders import FastaDictFromFile
+from src.loaders import (
+    FastaDictFromFile,
+    just_the_nonhidden_files,
+)
 
 
 def fasta_consensi_to_cag_tract_exons(
@@ -10,9 +13,7 @@ def fasta_consensi_to_cag_tract_exons(
     output_fasta_dir_path="assets/fasta/cag_tract_exons",
     fasta_dict_loader=FastaDictFromFile(),
 ):
-    for input_fasta_file_name in sorted(
-        [file for file in os.listdir(input_fasta_dir_path) if not file.startswith(".")]
-    ):
+    for input_fasta_file_name in sorted(just_the_nonhidden_files(input_fasta_dir_path)):
         input_fasta_file_path = f"{input_fasta_dir_path}/{input_fasta_file_name}"
 
         exon_list = fasta_dict_loader(input_fasta_file_path).values()

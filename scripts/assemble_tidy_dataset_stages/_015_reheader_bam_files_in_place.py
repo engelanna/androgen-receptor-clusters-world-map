@@ -1,17 +1,13 @@
 import os
 import subprocess
 
-# HG00097_CCAAGTCT-AAGGATGA_HCLHLDSXX_L001 This bloke needs to be there
-
-_just_the_nonhidden_files = lambda dir: [
-    file for file in os.listdir(dir) if not file.startswith(".")
-]
+from src.loaders import just_the_nonhidden_files
 
 _run_shell_command = lambda command: print(subprocess.run(command, shell=True))
 
 
-def reheader_bam_files_in_place(bam_dir_path="assets/bam/remaining/single"):
-    for bam_filename in sorted(_just_the_nonhidden_files(bam_dir_path)):
+def reheader_bam_files_in_place(bam_dir_path="assets/bam"):
+    for bam_filename in sorted(just_the_nonhidden_files(bam_dir_path)):
         bam_file_path = f"{bam_dir_path}/{bam_filename}"
         tmp_bam_file_path = f"{bam_file_path}.tmp"
         header_file_path = f"{bam_file_path}.header"
