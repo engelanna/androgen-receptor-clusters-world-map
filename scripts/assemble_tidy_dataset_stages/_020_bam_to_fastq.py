@@ -17,7 +17,7 @@ def bam_to_fastq(
         command = "".join(
             [
                 f"samtools mpileup --uncompressed --fasta-ref {reference_genome_file_path} {input_bam_file_path}",
-                " | bcftools call --consensus-caller",
+                f" | bcftools call --consensus-caller",
                 f" | $(which vcfutils.pl) vcf2fq > {output_fastq_file_path}",
             ]
         )
