@@ -1,7 +1,7 @@
 from .assemble_tidy_dataset_stages import *
 
 download_bam_files()
-reheader_bam_files_in_place()
+reheader_bam_files_with_proper_tabs()
 bam_to_fastq()
 fastq_to_fasta_consensi()
 fasta_consensi_to_cag_tract_exons()
