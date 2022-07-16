@@ -6,7 +6,7 @@ from src.loaders import just_the_nonhidden_files
 _run_shell_command = lambda command: print(subprocess.run(command, shell=True))
 
 
-def reheader_bam_files_with_proper_tabs(bam_dir_path="assets/bam/remaining"):
+def reheader_bam_files_with_proper_tabs(bam_dir_path="assets/bam"):
     for bam_filename in sorted(just_the_nonhidden_files(bam_dir_path)):
         bam_file_path = f"{bam_dir_path}/{bam_filename}"
         tmp_bam_file_path = f"{bam_file_path}.tmp"
