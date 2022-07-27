@@ -1111,7 +1111,6 @@ ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/gambian_genome_variati
 ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/gambian_genome_variation_project/data/WOLOFF/SC_GMWOF5428745/alignment/SC_GMWOF5428745.alt_bwamem_GRCh38DH.20151208.WOLOFF.gambian_lowcov.cram
 ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/gambian_genome_variation_project/data/WOLOFF/SC_GMWOF5428747/alignment/SC_GMWOF5428747.alt_bwamem_GRCh38DH.20151208.WOLOFF.gambian_lowcov.cram
 ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/gambian_genome_variation_project/data/WOLOFF/SC_GMWOF5428748/alignment/SC_GMWOF5428748.alt_bwamem_GRCh38DH.20151208.WOLOFF.gambian_lowcov.cram
-ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/gambian_genome_variation_project/data/WOLOFF/SC_GMWOF5428755/alignment/SC_GMWOF5428755.alt_bwamem_GRCh38DH.20151208.WOLOFF.gambian_lowcov.cram
 ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/gambian_genome_variation_project/data/WOLOFF/SC_GMWOF5428762/alignment/SC_GMWOF5428762.alt_bwamem_GRCh38DH.20151208.WOLOFF.gambian_lowcov.cram
 ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/gambian_genome_variation_project/data/WOLOFF/SC_GMWOF5428763/alignment/SC_GMWOF5428763.alt_bwamem_GRCh38DH.20151208.WOLOFF.gambian_lowcov.cram
 ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/gambian_genome_variation_project/data/WOLOFF/SC_GMWOF5428770/alignment/SC_GMWOF5428770.alt_bwamem_GRCh38DH.20151208.WOLOFF.gambian_lowcov.cram

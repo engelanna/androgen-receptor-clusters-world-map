@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "androgen-receptor-cag-repeats-map"
 version = "0.1.0"
-description = "'World map' of androgen receptor CAG repeats (4655 genomes)"
+description = "'World map' of androgen receptor CAG repeats (4654 genomes)"
 authors = ["Anna Julia Engel <anna.julia.engel@gmail.com>"]
 
 [tool.poetry.dependencies]
