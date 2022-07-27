@@ -17,5 +17,14 @@ L.tileLayer("https://{s}.tile.osm.org/{z}/{x}/{y}.png", {
 
 L.marker([51.5, -0.09])
   .addTo(map)
-  .bindPopup("A pretty CSS3 popup.<br> Easily customizable.")
+  .bindPopup("HAHAHAHA I AM TEH 2ND ONE")
   .openPopup();
+
+L.marker([5, -0.08])
+  .addTo(map)
+  .bindPopup("A pretty CSS3 popup.<br> Easily customizable.");
+
+// var popup = L.popup()
+//     .setLatLng([51.513, -0.09])
+//     .setContent("I am a standalone popup.")
+//     .openOn(map); // andles automatic closing of a previously opened popup when opening a new one
