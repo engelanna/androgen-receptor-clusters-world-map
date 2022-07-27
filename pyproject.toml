@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "androgen-receptor-cag-repeats-map"
+name = "androgen-receptor-clustering"
 version = "0.1.0"
 description = "'World map' of androgen receptor CAG repeats (4654 genomes)"
 authors = ["Anna Julia Engel <anna.julia.engel@gmail.com>"]
