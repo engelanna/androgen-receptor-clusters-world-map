@@ -4,7 +4,13 @@ import pandas as pd
 def clustering_results_to_map_dataframes(
     html_color_codes=pd.read_csv("assets/tsv/populations_lat_long.tsv", sep="\t"),
     populations_lat_long=pd.read_csv("assets/tsv/populations_lat_long.tsv", sep="\t"),
+    clustering_output_dir_path="assets/tsv/clustering_output",
 ):
+    clustering_output = pd.read_csv(
+        "assets/tsv/clustering_output/min-seq-id-0.950.tsv",
+        names=["Cluster representative", "Clustered sequence"],
+        sep="\t",
+    )
     # output_fasta_file = open(output_fasta_file_path, "w")
 
     # for input_fasta_file_name in sorted(just_the_nonhidden_files(input_fasta_dir_path)):
