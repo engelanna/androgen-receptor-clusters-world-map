@@ -1,0 +1,213 @@
+Population elastic ID	Population description	Latitude	Longitude	Data collection
+FIN	Finnish in Finland	60.17	24.93	1000 Genomes on GRCh38
+CHS	Han Chinese South	23.13333	113.266667	1000 Genomes on GRCh38
+KHV	Kinh in Ho Chi Minh City, Vietnam	10.78	106.68	1000 Genomes on GRCh38
+BEB	Bengali in Bangladesh	23.7	90.35	1000 Genomes on GRCh38
+PUR	Puerto Rican in Puerto Rico	18.4	-66.1	1000 Genomes on GRCh38
+ACB	African Caribbean in Barbados	13.1	-59.62	1000 Genomes on GRCh38
+GWW	Gambian in Western Division, The Gambia - Wolof	13.454876	-16.579032	Gambian Genome Variation Project (GRCh37)
+BalochiHGDP	Balochi in Pakistan (HGDP)	30.5	66.5	Human Genome Diversity Project
+BantuKenyaHGDP	Bantu in Kenya (HGDP)	-3.0	37.0	Human Genome Diversity Project
+BantuSouthAfricaHGDP	Bantu in South Africa (HGDP)	-25.6	24.25	Human Genome Diversity Project
+BergamoItalianHGDP	Bergamo Italian in Bergamo, Italy (HGDP)	46.0	10.0	Human Genome Diversity Project
+ColombianHGDP	Colombian in Colombia (HGDP)	3.0	-68.0	Human Genome Diversity Project
+DaurHGDP	Daur in China (HGDP)	48.5	124.0	Human Genome Diversity Project
+BengaliSGDP	Bengali in Bangladesh (SGDP)	23.7	90.4	Simons Genome Diversity Project
+BiakaSGDP	Biaka in Central African Republic (SGDP)	4.0	17.0	Simons Genome Diversity Project
+ASW	African Ancestry in Southwest US	35.483	-97.53333	1000 Genomes on GRCh38
+MansiSGDP	Mansi in Russia (SGDP)	63.725	61.775	Simons Genome Diversity Project
+AdygeiHGDP	Adygei in Caucasus, Russia (HGDP)	44.0	39.0	Human Genome Diversity Project
+HazaraSGDP	Hazara in Pakistan (SGDP)	33.5	70.0	Simons Genome Diversity Project
+BasqueHGDP	Basque in France (HGDP)	43.0	0.0	Human Genome Diversity Project
+ThaiSGDP	Thai in Thailand (SGDP)	13.8	100.5	Simons Genome Diversity Project
+BedouinHGDP	Bedouin in Negev, Israel (HGDP)	31.0	35.0	Human Genome Diversity Project
+TurkishSGDP	Turkish in Turkey (SGDP)	38.7	35.5	Simons Genome Diversity Project
+BurushoHGDP	Burusho in Pakistan (HGDP)	36.5	74.0	Human Genome Diversity Project
+MixtecSGDP	Mixtec in Mexico (SGDP)	17.0	-97.0	Simons Genome Diversity Project
+KapuSGDP	Kapu in India (SGDP)	17.7	83.3	Simons Genome Diversity Project
+KalashHGDP	Kalash in Pakistan (HGDP)	36.0	71.5	Human Genome Diversity Project
+OroqenHGDP	Oroqen in China (HGDP)	50.4	126.5	Human Genome Diversity Project
+PapuanSepikHGDP	Papuan Sepik in New Guinea (HGDP)	-4.0	143.0	Human Genome Diversity Project
+SanHGDP	San in Namibia (HGDP)	-21.0	20.0	HGDP Transcriptome
+SardinianHGDP	Sardinian in Italy (HGDP)	40.0	9.0	Human Genome Diversity Project
+SindhiHGDP	Sindhi in Pakistan (HGDP)	25.5	69.0	Human Genome Diversity Project
+SuruiHGDP	Surui in Brazil (HGDP)	-11.0	-62.0	Human Genome Diversity Project
+TuHGDP	Tu in China (HGDP)	36.0	101.0	Human Genome Diversity Project
+TujiaHGDP	Tujia in China (HGDP)	29.0	109.0	Human Genome Diversity Project
+TuscanHGDP	Tuscan in Italy (HGDP)	43.0	11.0	Human Genome Diversity Project
+XiboHGDP	Xibo in China (HGDP)	43.5	81.5	Human Genome Diversity Project
+MozabiteSGDP	Mozabite in Algeria (SGDP)	32.0	3.0	Simons Genome Diversity Project
+YakutHGDP	Yakut in Siberia (HGDP)	63.0	129.5	HGDP Transcriptome
+ArmenianSGDP	Armenian in Armenia (SGDP)	40.2	44.5	Simons Genome Diversity Project
+PimaSGDP	Pima in Mexico (SGDP)	29.0	-108.0	Simons Genome Diversity Project
+EvenSGDP	Even in Russia (SGDP)	57.53	135.88	Simons Genome Diversity Project
+LuhyaSGDP	Luhya in Kenya (SGDP)	1.3	36.8	Simons Genome Diversity Project
+JuhoanNorthSGDP	Ju|'hoan North in Namibia (SGDP)	-18.909314	21.488112	Simons Genome Diversity Project
+RussianSGDP	Russian in Russia (SGDP)	61.0	40.0	Simons Genome Diversity Project
+UygurSGDP	Uygur in China (SGDP)	44.0	81.0	Simons Genome Diversity Project
+GreekSGDP	Greek in Greece (SGDP)	38.0	23.7	Simons Genome Diversity Project
+KyrgyzSGDP	Kyrgyz in Kyrgyzystan (SGDP)	42.9	74.6	Simons Genome Diversity Project
+BedouinBSGDP	Bedouin B in Israel(Negev) (SGDP)	31.0	35.0	Simons Genome Diversity Project
+YiSGDP	Yi in China (SGDP)	28.0	103.0	Simons Genome Diversity Project
+AbkhasianSGDP	Abkhasian in Abkhazia or Russia (SGDP)	43.0	41.0	Simons Genome Diversity Project
+PunjabiSGDP	Punjabi in Pakistan (SGDP)	31.5	74.3	Simons Genome Diversity Project
+DaiSGDP	Dai in China (SGDP)	21.0	100.0	Simons Genome Diversity Project
+BulgarianSGDP	Bulgarian in Bulgaria (SGDP)	42.2	24.7	Simons Genome Diversity Project
+MixeSGDP	Mixe in Mexico (SGDP)	16.95	-96.58	Simons Genome Diversity Project
+BurmeseSGDP	Burmese in Myanmar (SGDP)	17.0	96.7	Simons Genome Diversity Project
+MbutiSGDP	Mbuti in Congo (SGDP)	1.0	29.0	Simons Genome Diversity Project
+UlchiSGDP	Ulchi in Russia (SGDP)	52.4	140.435	Simons Genome Diversity Project
+BrahuiSGDP	Brahui in Pakistan (SGDP)	30.5	66.5	Simons Genome Diversity Project
+ChukchiSGDP	Chukchi in Russia (SGDP)	69.0	169.0	Simons Genome Diversity Project
+CambodianSGDP	Cambodian in Cambodia (SGDP)	12.0	105.0	Simons Genome Diversity Project
+HawaiianSGDP	Hawaiian in USA (SGDP)	21.3	-157.8	Simons Genome Diversity Project
+EskimoNaukanSGDP	Eskimo Naukan in Russia (SGDP)	66.02	169.71	Simons Genome Diversity Project
+GambianSGDP	Gambian in Gambia (SGDP)	13.4	-16.7	Simons Genome Diversity Project
+MaoriSGDP	Maori in New Zealand (SGDP)	-41.3	174.5	Simons Genome Diversity Project
+YadavaSGDP	Yadava in India (SGDP)	17.7	83.3	Simons Genome Diversity Project
+SaharawiSGDP	Saharawi in Western Sahara (Morocco) (SGDP)	27.3	-8.9	Simons Genome Diversity Project
+BrahminSGDP	Brahmin in India (SGDP)	17.7	83.3	Simons Genome Diversity Project
+JapaneseSGDP	Japanese in Japan (SGDP)	38.0	138.0	Simons Genome Diversity Project
+MiaoSGDP	Miao in China (SGDP)	28.0	109.0	Simons Genome Diversity Project
+HanSGDP	Han in China (SGDP)	32.288556	114.0	Simons Genome Diversity Project
+EskimoSirenikiSGDP	Eskimo Sireniki in Russia (SGDP)	64.4	173.9	Simons Genome Diversity Project
+HungarianSGDP	Hungarian in Hungary (SGDP)	47.5	19.1	Simons Genome Diversity Project
+AltaianSGDP	Altaian in Russia (SGDP)	51.9	86.0	Simons Genome Diversity Project
+FinnishSGDP	Finnish in Finland (SGDP)	60.2	24.9	Simons Genome Diversity Project
+IgorotSGDP	Igorot in Philippines (SGDP)	17.1	121.0	Simons Genome Diversity Project
+AmiSGDP	Ami in Taiwan (SGDP)	22.843145	121.185356	Simons Genome Diversity Project
+HezhenSGDP	Hezhen in China (SGDP)	47.5	133.5	Simons Genome Diversity Project
+OrcadianSGDP	Orcadian in Orkney Islands (SGDP)	59.0	-3.0	Simons Genome Diversity Project
+KusundaSGDP	Kusunda in Nepal (SGDP)	28.072453	83.373633	Simons Genome Diversity Project
+AustralianSGDP	Australian in Australia (SGDP)	-13.0	143.0	Simons Genome Diversity Project
+TlingitSGDP	Tlingit in Russia (SGDP)	54.09	162.325	Simons Genome Diversity Project
+QuechuaSGDP	Quechua in Peru (SGDP)	-13.5	-72.0	Simons Genome Diversity Project
+IraqiJewSGDP	Iraqi Jew in Iraq (SGDP)	33.3	44.4	Simons Genome Diversity Project
+BougainvilleSGDP	Bougainville in Papua New Guinea (SGDP)	-6.0	155.0	Simons Genome Diversity Project
+DruzeSGDP	Druze in Israel(Carmel) (SGDP)	32.0	35.0	Simons Genome Diversity Project
+NorwegianSGDP	Norwegian in Norway (SGDP)	60.3943	5.3258	Simons Genome Diversity Project
+MongolaSGDP	Mongola in China (SGDP)	45.0	111.0	Simons Genome Diversity Project
+LahuHGDP	Lahu in China (HGDP)	22.0	100.0	Human Genome Diversity Project
+MakraniHGDP	Makrani in Pakistan (HGDP)	26.0	64.0	Human Genome Diversity Project
+NaxiHGDP	Naxi in China (HGDP)	26.0	100.0	Human Genome Diversity Project
+MandenkaSGDP	Mandenka in Senegal (SGDP)	12.0	-12.0	Simons Genome Diversity Project
+AlbanianSGDP	Albanian in Albania (SGDP)	41.3	19.8	Simons Genome Diversity Project
+YRI	Yoruba in Ibadan, Nigeria	7.4	3.92	1000 Genomes on GRCh38
+GWD	Gambian in Western Division, The Gambia - Mandinka	13.454876	-16.579032	1000 Genomes on GRCh38
+JPT	Japanese in Tokyo, Japan	35.68	139.68	1000 Genomes on GRCh38
+MSL	Mende in Sierra Leone	8.48	-13.23	1000 Genomes on GRCh38
+CEU	Utah residents (CEPH) with Northern and Western European ancestry	40.767	-111.8904	1000 Genomes on GRCh38
+ESN	Esan in Nigeria	9.06666	7.483333	1000 Genomes on GRCh38
+CHB	Han Chinese in Beijing, China	39.916666	116.383333	1000 Genomes on GRCh38
+CLM	Colombian in Medellin, Colombia	4.58333	-74.066666	1000 Genomes on GRCh38
+CDX	Chinese Dai in Xishuangbanna, China	22.0	100.78	1000 Genomes on GRCh38
+PEL	Peruvian in Lima, Peru	-12.04	-77.03	1000 Genomes on GRCh38
+PJL	Punjabi in Lahore, Pakistan	31.554606	74.357158	1000 Genomes on GRCh38
+IBS	Iberian populations in Spain	40.38	-3.72	1000 Genomes on GRCh38
+TSI	Toscani in Italy	42.1	12.0	1000 Genomes on GRCh38
+MXL	Mexican Ancestry in Los Angeles, California	34.0544	-118.2439	1000 Genomes on GRCh38
+BougainvilleHGDP	Bougainville in Bougainville (HGDP)	-6.0	155.0	Human Genome Diversity Project
+FrenchHGDP	French in France (HGDP)	46.0	2.0	Human Genome Diversity Project
+MiaoHGDP	Miao in China (HGDP)	28.0	109.0	Human Genome Diversity Project
+HanHGDP	Han in China (HGDP)	32.3	114.0	Human Genome Diversity Project
+MozabiteHGDP	Mozabite in Mzab, Algeria (HGDP)	32.0	3.0	HGDP Transcriptome
+NorthernHanHGDP	Northern Han in China (HGDP)	32.3	114.0	Human Genome Diversity Project
+PapuanHighlandsHGDP	Papuan Highlands in New Guinea (HGDP)	-4.0	143.0	Human Genome Diversity Project
+PathanHGDP	Pathan in Pakistan (HGDP)	33.5	70.5	HGDP Transcriptome
+LWK	Luhya in Webuye, Kenya	-1.27	36.61	1000 Genomes on GRCh38
+EnglishSGDP	English in England (SGDP)	51.2	0.7	Simons Genome Diversity Project
+JapaneseHGDP	Japanese in Japan (HGDP)	38.0	138.0	Human Genome Diversity Project
+TuscanSGDP	Tuscan in Italy(Tuscany) (SGDP)	43.0	11.0	Simons Genome Diversity Project
+KaritianaHGDP	Karitiana in Brazil (HGDP)	-10.0	-63.0	Human Genome Diversity Project
+SomaliSGDP	Somali in Kenya (SGDP)	5.6	48.3	Simons Genome Diversity Project
+MayaHGDP	Maya in Mexico (HGDP)	19.0	-91.0	HGDP Transcriptome
+LuoSGDP	Luo in Kenya (SGDP)	-0.1	34.3	Simons Genome Diversity Project
+MbutiHGDP	Mbuti in Democratic Republic of Congo (HGDP)	1.0	29.0	HGDP Transcriptome
+BantuHereroSGDP	Bantu Herero in Botswana Or Namibia (SGDP)	-22.0	19.0	Simons Genome Diversity Project
+PalestinianHGDP	Palestinian in Central, Israel (HGDP)	32.0	35.0	Human Genome Diversity Project
+MayanSGDP	Mayan in Mexico (SGDP)	19.0	-91.0	Simons Genome Diversity Project
+PimaHGDP	Pima in Mexico (HGDP)	29.0	-108.0	Human Genome Diversity Project
+TuSGDP	Tu in China (SGDP)	36.0	101.0	Simons Genome Diversity Project
+PolishSGDP	Polish in Poland (SGDP)	52.2	21.0	Simons Genome Diversity Project
+DaurSGDP	Daur in China (SGDP)	48.5	124.0	Simons Genome Diversity Project
+YakutSGDP	Yakut in Russia (SGDP)	63.0	129.5	Simons Genome Diversity Project
+KaritianaSGDP	Karitiana in Brazil (SGDP)	-10.0	-63.0	Simons Genome Diversity Project
+ChechenSGDP	Chechen in Russia (SGDP)	43.3	45.7	Simons Genome Diversity Project
+EskimoChaplinSGDP	Eskimo Chaplin in Russia (SGDP)	64.48	172.86	Simons Genome Diversity Project
+PapuanSGDP	Papuan in Papua New Guinea (SGDP)	-4.0	143.0	Simons Genome Diversity Project
+YorubaSGDP	Yoruba in Nigeria (SGDP)	7.4	3.9	Simons Genome Diversity Project
+DusunSGDP	Dusun in Brunei (SGDP)	4.7	114.7	Simons Genome Diversity Project
+GIH	Gujarati Indians in Houston, TX	29.7589	-95.3677	1000 Genomes on GRCh38
+BantuTswanaSGDP	Bantu Tswana in Botswana Or Namibia (SGDP)	-28.0	24.0	Simons Genome Diversity Project
+ChaneSGDP	Chane in Argentina (SGDP)	-25.0	-60.0	Simons Genome Diversity Project
+GeorgianSGDP	Georgian in Georgia (SGDP)	42.5	41.9	Simons Genome Diversity Project
+PalestinianSGDP	Palestinian in Israel(Central) (SGDP)	32.0	35.0	Simons Genome Diversity Project
+PathanSGDP	Pathan in Pakistan (SGDP)	33.5	70.5	Simons Genome Diversity Project
+TajikSGDP	Tajik in Tajikistan (SGDP)	37.6	71.5	Simons Genome Diversity Project
+KoreanSGDP	Korean in Korea (SGDP)	37.6	127.0	Simons Genome Diversity Project
+SaamiSGDP	Saami in Finland (SGDP)	69.9	27.0	Simons Genome Diversity Project
+SuruiSGDP	Surui in Brazil (SGDP)	-11.0	-62.0	Simons Genome Diversity Project
+PiapocoSGDP	Piapoco in Colombia (SGDP)	3.0	-68.0	Simons Genome Diversity Project
+XiboSGDP	Xibo in China (SGDP)	43.5	81.5	Simons Genome Diversity Project
+GWF	Gambian in Western Division, The Gambia - Fula	13.454876	-16.579032	Gambian Genome Variation Project (GRCh37)
+TujiaSGDP	Tujia in China (SGDP)	29.0	109.0	Simons Genome Diversity Project
+SheHGDP	She in China (HGDP)	27.0	119.0	Human Genome Diversity Project
+YorubaHGDP	Yoruba in Nigeria (HGDP)	8.0	5.0	Human Genome Diversity Project
+UygurHGDP	Uygur in China (HGDP)	44.0	81.0	Human Genome Diversity Project
+AdygeiSGDP	Adygei in Russia(Caucasus) (SGDP)	44.0	39.0	Simons Genome Diversity Project
+CreteSGDP	Crete in Greece (SGDP)	35.341846	25.148254	Simons Genome Diversity Project
+AleutSGDP	Aleut in Russia (SGDP)	55.18	166.0	Simons Genome Diversity Project
+BiakaHGDP	Biaka in Central African Republic (HGDP)	4.0	17.0	Human Genome Diversity Project
+MadigaSGDP	Madiga in India (SGDP)	17.7	83.3	Simons Genome Diversity Project
+HazaraHGDP	Hazara in Pakistan (HGDP)	33.5	70.0	Human Genome Diversity Project
+SheSGDP	She in China (SGDP)	27.0	119.0	Simons Genome Diversity Project
+STU	Sri Lankan Tamil in the UK	52.486243	-1.890401	1000 Genomes on GRCh38
+ITU	Indian Telugu in the UK	52.486243	-1.890401	1000 Genomes on GRCh38
+GWJ	Gambian in Western Division, The Gambia - Jola	13.454876	-16.579032	Gambian Genome Variation Project (GRCh37)
+GBR	British in England and Scotland	52.486243	-1.890401	1000 Genomes on GRCh38
+BrahuiHGDP	Brahui in Pakistan (HGDP)	30.5	66.5	Human Genome Diversity Project
+CambodianHGDP	Cambodian in Cambodia (HGDP)	12.0	105.0	HGDP Transcriptome
+DaiHGDP	Dai in China (HGDP)	21.0	100.0	Human Genome Diversity Project
+DruzeHGDP	Druze in Carmel, Israel (HGDP)	32.0	35.0	Human Genome Diversity Project
+SamaritanSGDP	Samaritan in Israel (SGDP)	32.2	35.3	Simons Genome Diversity Project
+KalashSGDP	Kalash in Pakistan (SGDP)	36.0	71.5	Simons Genome Diversity Project
+TubalarSGDP	Tubalar in Russia (SGDP)	51.133333	87.0	Simons Genome Diversity Project
+NorthOssetianSGDP	North Ossetian in Russia (SGDP)	43.0	44.7	Simons Genome Diversity Project
+MendeSGDP	Mende in Sierra Leone (SGDP)	8.5	-13.2	Simons Genome Diversity Project
+LezginSGDP	Lezgin in Russia (SGDP)	42.1	48.2	Simons Genome Diversity Project
+BalochiSGDP	Balochi in Pakistan (SGDP)	30.5	66.5	Simons Genome Diversity Project
+KhomaniSanSGDP	Khomani San in South Africa (SGDP)	-27.0	20.8	Simons Genome Diversity Project
+ZapotecSGDP	Zapotec in Mexico (SGDP)	16.5	-97.2	Simons Genome Diversity Project
+CzechSGDP	Czech in Czechoslovakia(pre1989) (SGDP)	50.1	14.4	Simons Genome Diversity Project
+LahuSGDP	Lahu in China (SGDP)	22.0	100.0	Simons Genome Diversity Project
+BasqueSGDP	Basque in France (SGDP)	43.0	0.0	Simons Genome Diversity Project
+KhondaDoraSGDP	Khonda Dora in India (SGDP)	18.3	82.9	Simons Genome Diversity Project
+EstonianSGDP	Estonian in Estonia (SGDP)	58.5	24.9	Simons Genome Diversity Project
+Masai	Masai in Kenya	-1.5	35.2	Simons Genome Diversity Project
+HezhenHGDP	Hezhen in China (HGDP)	47.5	133.5	Human Genome Diversity Project
+MandenkaHGDP	Mandenka in Senegal (HGDP)	12.0	-12.0	Human Genome Diversity Project
+MongolianHGDP	Mongolian in China (HGDP)	48.5	119.0	Human Genome Diversity Project
+OrcadianHGDP	Orcadian in Orkney (HGDP)	59.0	-3.0	Human Genome Diversity Project
+RussianHGDP	Russian in Russia (HGDP)	61.0	40.0	Human Genome Diversity Project
+AtayalSGDP	Atayal in Taiwan (SGDP)	24.611712	121.296444	Simons Genome Diversity Project
+IrulaSGDP	Irula in India (SGDP)	13.5	80.0	Simons Genome Diversity Project
+IcelandicSGDP	Icelandic in Iceland (SGDP)	64.1	-21.9	Simons Genome Diversity Project
+BantuKenyaSGDP	Bantu Kenya in Kenya (SGDP)	-3.0	37.0	Simons Genome Diversity Project
+RelliSGDP	Relli in India (SGDP)	17.7	83.3	Simons Genome Diversity Project
+SardinianSGDP	Sardinian in Italy (SGDP)	40.0	9.0	Simons Genome Diversity Project
+DinkaSGDP	Dinka in Sudan (SGDP)	8.794444	27.4	Simons Genome Diversity Project
+NaxiSGDP	Naxi in China (SGDP)	26.0	100.0	Simons Genome Diversity Project
+YiHGDP	Yi in China (HGDP)	28.0	103.0	Human Genome Diversity Project
+BurushoSGDP	Burusho in Pakistan (SGDP)	36.5	74.0	Simons Genome Diversity Project
+MakraniSGDP	Makrani in Pakistan (SGDP)	26.0	64.0	Simons Genome Diversity Project
+SpanishSGDP	Spanish in Spain (SGDP)	39.9	-4.0	Simons Genome Diversity Project
+YemeniteJewSGDP	Yemenite Jew in Yemen (SGDP)	15.4	44.2	Simons Genome Diversity Project
+OroqenSGDP	Oroqen in China (SGDP)	50.4	126.5	Simons Genome Diversity Project
+FrenchSGDP	French in France (SGDP)	46.0	2.0	Simons Genome Diversity Project
+JordanianSGDP	Jordanian in Jordan (SGDP)	32.1	35.9	Simons Genome Diversity Project
+SindhiSGDP	Sindhi in Pakistan (SGDP)	25.5	69.0	Simons Genome Diversity Project
+KinhSGDP	Kinh in Vietnam (SGDP)	21.0	105.9	Simons Genome Diversity Project
+IranianSGDP	Iranian in Iran (SGDP)	35.6	51.5	Simons Genome Diversity Project
+ItelmanSGDP	Itelman in Russia (SGDP)	57.0	157.0	Simons Genome Diversity Project
+EsanSGDP	Esan in Nigeria (SGDP)	6.5	6.0	Simons Genome Diversity Project
+BergamoSGDP	Bergamo in Italy(Bergamo) (SGDP)	46.0	10.0	Simons Genome Diversity Project
