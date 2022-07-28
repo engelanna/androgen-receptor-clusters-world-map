@@ -1,4 +1,4 @@
-Population elastic ID	Population description	Latitude	Longitude	Data collection
+PopulationElasticId	PopulationDescription	PopulationLatitude	PopulationLongitude	DataCollection
 FIN	Finnish in Finland	60.17	24.93	1000 Genomes on GRCh38
 CHS	Han Chinese South	23.13333	113.266667	1000 Genomes on GRCh38
 KHV	Kinh in Ho Chi Minh City, Vietnam	10.78	106.68	1000 Genomes on GRCh38
