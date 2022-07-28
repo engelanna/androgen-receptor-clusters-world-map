@@ -8,27 +8,42 @@ file_name_to_sample_name = lambda column: column.split(".")[0]
 
 
 def clustering_results_to_map_dataframes(
-    html_color_codes=pd.read_csv("assets/tsv/populations_lat_long.tsv", sep="\t"),
-    populations_lat_long=pd.read_csv("assets/tsv/populations_lat_long.tsv", sep="\t"),
+    df_samples=pd.read_csv("assets/tsv/igsr_samples.tsv", sep="\t"),
+    df_pop_lat_long=pd.read_csv("assets/tsv/populations_lat_long.tsv", sep="\t"),
     clusters_dir_path="assets/tsv/clustering_output",
+    map_dataframes_output_dir_path="assets/tsv/map_ready_dataframes",
 ):
 
     for cluster_tsv_file_name in sorted(just_the_nonhidden_files(clusters_dir_path)):
-        clusters_df = pd.read_csv(
+        df_clusters = pd.read_csv(
             f"{clusters_dir_path}/{cluster_tsv_file_name}",
-            names=["Cluster representative", "Clustered sequence"],
+            names=["Cluster name", "Sample name"],
             sep="\t",
         )
-        for colname in list(clusters_df):
-            clusters_df[colname] = clusters_df[colname].apply(file_name_to_sample_name)
+        for colname in list(df_clusters):
+            df_clusters[colname] = df_clusters[colname].apply(file_name_to_sample_name)
 
+        sample_name_join = pd.merge(
+            df_clusters, df_samples, on=["Sample name"], how="left"
+        )
+        df_clusters["Sample link"] = (
+            "https://www.internationalgenome.org/data-portal/sample/"
+            + df_clusters["Sample name"]
+        )
+        df_clusters["Population name"] = sample_name_join["Population name"]
+        df_clusters["Population link"] = (
+            "https://www.internationalgenome.org/data-portal/population/"
+            + sample_name_join["Population elastic ID"]
+        )
         color_lookup = pydeck.data_utils.assign_random_colors(
-            clusters_df["Cluster representative"]
+            df_clusters["Cluster name"]
         )
-        clusters_df["Color"] = clusters_df.apply(
-            lambda row: color_lookup.get(row["Cluster representative"]), axis=1
+        df_clusters["Color"] = df_clusters.apply(
+            lambda row: color_lookup.get(row["Cluster name"]), axis=1
         )
-        print(clusters_df)
+        df_clusters.to_csv(
+            f"{map_dataframes_output_dir_path}/{cluster_tsv_file_name}", sep="\t"
+        )
 
 
 if __name__ == "__main__":
