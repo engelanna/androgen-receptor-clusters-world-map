@@ -8,16 +8,15 @@ def build_deck_renderer(minimum_sequence_identity: float):
         sep="\t",
     )
 
-    color_lookup = pydeck.data_utils.assign_random_colors(df["Cluster name"])
-    df["Color"] = df.apply(lambda row: color_lookup.get(row["Cluster name"]), axis=1)
+    color_lookup = pydeck.data_utils.assign_random_colors(df["ClusterName"])
+    df["Color"] = df.apply(lambda row: color_lookup.get(row["ClusterName"]), axis=1)
 
-    # Specify a deck.gl ArcLayer
     arc_layer = pydeck.Layer(
         "ArcLayer",
         data=df,
-        get_source_position=["Longitude", "Latitude"],
-        get_target_position=[5, 20],
-        get_source_color=[255, 100, 0],
+        get_source_position=["ClusterLongitude", "ClusterLatitude"],
+        get_target_position=["PopulationLongitude", "PopulationLatitude"],
+        get_source_color="Color",
         get_target_color="Color",
         pickable=True,
         auto_highlight=True,
