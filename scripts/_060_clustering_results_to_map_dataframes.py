@@ -37,20 +37,12 @@ def clustering_results_to_map_dataframes(
         df_clusters = df_clusters.merge(df_samples, on="Sample name").merge(
             df_populations, on="Population elastic ID"
         )
-
-        # OK UP to here
-        color_lookup = pydeck.data_utils.assign_random_colors(
-            df_clusters["Cluster name"]
-        )
-        df_clusters["Color"] = df_clusters.apply(
-            lambda row: color_lookup.get(row["Cluster name"]), axis=1
-        )
-        print(df_clusters)
         df_clusters.to_csv(
             f"{map_dataframes_output_dir_path}/{cluster_tsv_file_name}",
             index=False,
             sep="\t",
         )
+        print(df_clusters)
 
 
 if __name__ == "__main__":
