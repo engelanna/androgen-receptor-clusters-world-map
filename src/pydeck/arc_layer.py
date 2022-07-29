@@ -1,12 +1,8 @@
 import pydeck
 import pandas as pd
 
-from src import ScatterSameCoordinatePoints
 
-
-def build_deck_renderer(
-    minimum_sequence_identity: float, coordinate_scatterer=ScatterSameCoordinatePoints()
-):
+def build_deck_renderer(minimum_sequence_identity: float):
     df = pd.read_csv(
         f"assets/tsv/map_ready_dataframes/min-seq-id-{minimum_sequence_identity:.3f}.tsv",
         sep="\t",
@@ -14,8 +10,6 @@ def build_deck_renderer(
     color_lookup = pydeck.data_utils.assign_random_colors(df["ClusterName"])
     df["Color"] = df.apply(lambda row: color_lookup.get(row["ClusterName"]), axis=1)
     df["Elevation"] = pd.Series([1000 for x in range(len(df.index))])
-    df["Latitude"] = coordinate_scatterer(df["Latitude"])
-    df["Longitude"] = coordinate_scatterer(df["Longitude"])
 
     # get_source_position=["Longitude", "Latitude"],
     # get_source_color="Color",

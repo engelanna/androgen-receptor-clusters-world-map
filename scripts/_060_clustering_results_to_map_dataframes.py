@@ -1,6 +1,7 @@
 import pandas as pd
 import pydeck
 
+from src import ScatterSameCoordinatePoints
 from src.loaders import just_the_nonhidden_files
 
 
@@ -34,6 +35,11 @@ def clustering_results_to_map_dataframes(
             "https://www.internationalgenome.org/data-portal/population/"
             + df_clusters["PopulationElasticId"]
         )
+        df_clusters["Latitude"] = ScatterSameCoordinatePoints()(df_clusters["Latitude"])
+        df_clusters["Longitude"] = ScatterSameCoordinatePoints()(
+            df_clusters["Longitude"]
+        )
+
         df_clusters = df_clusters[(sorted(list(df_clusters)))]
         df_clusters.to_csv(
             f"{map_dataframes_output_dir_path}/{cluster_tsv_file_name}",
