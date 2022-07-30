@@ -3,24 +3,27 @@ import pandas as pd
 
 from . import BuildDataframe
 
+"""
+A gdyby przyznawać je od największego
+
+"""
+
 
 class BuildDeckRenderer:
-    def __call__(self, minimum_sequence_identity: float):
+    def __call__(self, minimum_sequence_identity: str):
         df = BuildDataframe()(minimum_sequence_identity)
 
         cluster_names_to_indexes = {}
         for cluster_index, cluster_name in list(enumerate(df["ClusterName"])):
             cluster_names_to_indexes[cluster_name] = cluster_index
 
-        # get_source_position=["Longitude", "Latitude"],
-        # get_source_color="Color",
         layer = pydeck.Layer(
             "ColumnLayer",
             data=df,
             get_position=["Longitude", "Latitude"],
             get_elevation="Elevation",
             elevation_scale=5000,
-            radius=100000,
+            radius=50000,
             get_fill_color="Color",
             pickable=True,
             auto_highlight=True,
