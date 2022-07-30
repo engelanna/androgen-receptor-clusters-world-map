@@ -28,7 +28,7 @@ class BuildDeckRenderer:
         view_state = pydeck.ViewState(
             longitude=0,
             latitude=0,
-            zoom=0,
+            zoom=1,
             min_zoom=0,
             max_zoom=15,
             pitch=0,
