@@ -1,3 +1,4 @@
 from .build_dataframe import BuildDataframe
 from .build_deck_renderer import BuildDeckRenderer
 from .build_minimum_sequence_identity_string import BuildMinimumSequenceIdentityString
+from .build_legend import BuildLegend

@@ -2,25 +2,18 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-from src.pydeck_builders import BuildDeckRenderer, BuildMinimumSequenceIdentityString
+from src.builders import (
+    BuildDeckRenderer,
+    BuildLegend,
+    BuildMinimumSequenceIdentityString,
+)
 
 
 class BuildStreamlitMainPage:
     def __call__(self):
         st.set_page_config(layout="wide")
 
-        values = [
-            0.995,
-            0.996,
-            0.997,
-            0.998,
-            0.999,
-            0.9995,
-            0.9996,
-            0.9997,
-            0.9998,
-            0.9999,
-        ]
+        st.subheader("Androgen receptor clusters - world map of (4654 genomes)")
 
         minimum_sequence_identity = st.select_slider(
             label="Minimum identity to cluster",
@@ -45,6 +38,18 @@ class BuildStreamlitMainPage:
             BuildDeckRenderer()(
                 BuildMinimumSequenceIdentityString()(minimum_sequence_identity)
             )
+        )
+        BuildLegend()()
+
+        st.text("")
+        st.text("")
+        st.text(
+            "[trivium] On average, 2 random Africans are more genetically diverse, "
+            "than 2 random people picked from anywhere in the whole world."
+        )
+        st.text(
+            "[caveat] That being said, don't trust the Gambia data too much, "
+            """it was awfully low coverage."""
         )
 
 
