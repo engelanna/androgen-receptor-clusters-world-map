@@ -12,11 +12,11 @@ class BuildStreamlitMainPage:
         minimum_sequence_identity = st.slider(
             label="Minimum sequence identity",
             key="minimum_sequence_identity",
-            min_value=0.995,
-            max_value=0.999,
-            value=0.995,
-            step=0.001,
-            format=f"%.3f",
+            min_value=0.9995,
+            max_value=0.9999,
+            value=0.9995,
+            step=0.0001,
+            format=f"%.4f",
             help="To be the same cluster (color), how similar do two androgen receptors need to be?",
         )
         # st.write("check out this [link](https://share.streamlit.io/mesmith027/streamlit_webapps/main/MC_pi/streamlit_app.py)")
