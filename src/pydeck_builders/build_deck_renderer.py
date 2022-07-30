@@ -3,11 +3,6 @@ import pandas as pd
 
 from . import BuildDataframe
 
-"""
-A gdyby przyznawać je od największego
-
-"""
-
 
 class BuildDeckRenderer:
     def __call__(self, minimum_sequence_identity: str):
@@ -21,9 +16,8 @@ class BuildDeckRenderer:
             "ColumnLayer",
             data=df,
             get_position=["Longitude", "Latitude"],
-            get_elevation="Elevation",
-            elevation_scale=5000,
-            radius=50000,
+            elevation_scale=3000,
+            radius=100000,
             get_fill_color="Color",
             pickable=True,
             auto_highlight=True,
