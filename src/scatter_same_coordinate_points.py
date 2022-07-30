@@ -11,7 +11,7 @@ class ScatterSameCoordinatePoints:
                 unique_values.append(value)
             else:
                 while value in unique_values:
-                    value = uniform(value - 2, value + 2)
+                    value = uniform(value - 2.5, value + 2.5)
                 unique_values.append(value)
 
         return Series(list(unique_values))

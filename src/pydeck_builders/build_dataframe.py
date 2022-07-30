@@ -12,5 +12,6 @@ class BuildDataframe:
         )
         color_lookup = ColorLookup().assign_colors(df["ClusterName"])
         df["Color"] = df.apply(lambda row: color_lookup.get(row["ClusterName"]), axis=1)
+        df["Elevation"] = [0.9 if x == [255, 255, 255] else 1.0 for x in df["Color"]]
 
         return df

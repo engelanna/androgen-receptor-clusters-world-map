@@ -5,11 +5,12 @@ import random
 class ColorLookup:
     def __init__(self):
         self.preset_colors_remaining = [
-            (255, 255, 255),
-            (0, 255, 0),
-            (255, 0, 0),
-            (0, 0, 255),
-            (255, 165, 0),
+            [255, 255, 255],
+            [255, 255, 0],
+            [255, 0, 0],
+            [0, 255, 0],
+            [0, 0, 255],
+            [255, 165, 0],
         ]
 
     def assign_colors(self, data_vector):
