@@ -1,10 +1,7 @@
 import pandas as pd
 
 from src import ScatterSameCoordinatePoints
-from src.loaders import (
-    ColorLookup,
-    just_the_nonhidden_files,
-)
+from src.loaders import just_the_nonhidden_files
 
 
 file_name_to_sample_name = lambda column: column.split(".")[0]
@@ -41,13 +38,7 @@ def clustering_results_to_map_dataframes(
         df_clusters["Longitude"] = ScatterSameCoordinatePoints()(
             df_clusters["Longitude"]
         )
-        color_lookup = ColorLookup().assign_colors(df_clusters["ClusterName"])
-        df_clusters["Color"] = df_clusters.apply(
-            lambda row: color_lookup.get(row["ClusterName"]), axis=1
-        )
-        df_clusters["Elevation"] = [
-            0.9 if x == [255, 255, 255] else 1.0 for x in df_clusters["Color"]
-        ]
+
         df_clusters = df_clusters[(sorted(list(df_clusters)))]
         df_clusters.to_csv(
             f"{map_dataframes_output_dir_path}/{cluster_tsv_file_name}",
