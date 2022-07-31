@@ -3,12 +3,24 @@
 Part of an ongoing exploration of androgen receptors from publicly available genomes. 
 <br>The map should be available [here](https://engelanna-androgen-receptor-cl-build-streamlit-main-page-bje6e5.streamlitapp.com/).
 
-# Table of Contents
+## Table of Contents
+[Intro: Why care about the androgen receptor?](#why-care-about-the-androgen-receptor)
+
 [Phase 1: Data acquisition and cleaning](#phase-1-data-acquisition--cleaning)
 
 [Phase 2: Clustering with many-against-many sequence searching](#phase-2-clustering-by-many-against-many-sequence-searching)
 
 [References](#references)
+
+---
+
+## Why care about the androgen receptor?
+
+The androgen receptor (located on the X chromosome) is responsible for how thick one's bones get over the course of one's life (which includes bone density in old age, a major contributor to deadly fractures), and how easily one puts on muscle. Significantly fewer than the average 22 polyglutamine (CAGCAGCAG...) repeats can kill males via prostate cancer (especially those of African descent).
+
+Significantly > 22 repeats (highest average: Thai people) can bring insufficient fetal masculinization of the brain's stria terminalis (leading to gender dysphoria at puberty onwards) or of the body (intersexualism), more commonly "just" resulting in fertility problems. Too many CAG repeats have also been linked to increased suicidal depression in teenagers, as well as left-handedness.
+
+That's a lot of suffering in one tiny protein, whose dangerous mutations - in the age of [CRISPR/Cas9](http://www.crisprtx.com/gene-editing/crispr-cas9) - may simply become editable out of the genome. But the AR needs to be better understood first. Of note, individuals possessing multiple X chromosomes (including most females) are an order of magnitude less affected by the issues mentioned.
 
 ---
 
@@ -25,6 +37,8 @@ graph TD
     D(4: .fastq files) -.->|seqtk| E
     E(5. .fasta consensus files)
 ```
+
+---
 
 ## Phase 2: Clustering by many-against-many sequence searching
 
