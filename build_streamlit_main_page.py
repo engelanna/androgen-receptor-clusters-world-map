@@ -14,7 +14,10 @@ class BuildStreamlitMainPage:
         st.set_page_config(layout="wide")
 
         st.subheader(
-            "[Androgen receptor clusters - world map (4654 genomes)](https://github.com/engelanna/androgen-receptor-clustering)",
+            (
+                "Androgen receptor clusters: world map (4654 genomes) / "
+                "[description@Github](https://github.com/engelanna/androgen-receptor-clustering)"
+            )
         )
 
         minimum_sequence_identity = st.selectbox(
@@ -41,15 +44,15 @@ class BuildStreamlitMainPage:
         )
         BuildLegend()()
 
-        st.text("")
-        st.text("")
-        st.text(
-            "#trivium On average, 2 random Africans are more genetically diverse, "
+        st.markdown("")
+        st.markdown("")
+        st.markdown(
+            "**trivium:** On average, 2 random Africans are more genetically diverse, "
             "than 2 random people picked from anywhere in the whole world."
         )
-        st.text(
-            "#caveat That being said, don't trust the Gambia data too much, "
-            """it was awfully low coverage."""
+        st.markdown(
+            "**caveat:** Having said that, don't trust the Gambia data too much "
+            """(it was low coverage)."""
         )
 
 

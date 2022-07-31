@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "androgen-receptor-clustering"
+name = "androgen-receptor-clusters-world-map"
 version = "0.1.0"
-description = "'World map' of androgen receptor clusters (4654 genomes)"
+description = "Many-against-many sequence searching on the protein of masculinity :muscle:"
 authors = ["Anna Julia Engel <anna.julia.engel@gmail.com>"]
 
 [tool.poetry.dependencies]
