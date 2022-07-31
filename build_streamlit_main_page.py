@@ -15,7 +15,7 @@ class BuildStreamlitMainPage:
 
         st.subheader("Androgen receptor clusters - world map of (4654 genomes)")
 
-        minimum_sequence_identity = st.select_slider(
+        minimum_sequence_identity = st.selectbox(
             label="Minimum identity to cluster",
             key="minimum_sequence_identity",
             options=[
@@ -30,10 +30,8 @@ class BuildStreamlitMainPage:
                 "99.98%",
                 "99.99%",
             ],
-            value="99.5%",
             help="To be the same cluster (color), how similar do two androgen receptors need to be?",
         )
-        # st.write("check out this [link](https://share.streamlit.io/mesmith027/streamlit_webapps/main/MC_pi/streamlit_app.py)")
         st.pydeck_chart(
             BuildDeckRenderer()(
                 BuildMinimumSequenceIdentityString()(minimum_sequence_identity)

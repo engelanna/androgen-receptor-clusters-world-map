@@ -1,5 +1,4 @@
 import pandas as pd
-import pydeck
 
 from src import ScatterSameCoordinatePoints
 from src.loaders import just_the_nonhidden_files

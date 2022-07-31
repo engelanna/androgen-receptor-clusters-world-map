@@ -1,5 +1,4 @@
 import pydeck
-import pandas as pd
 
 from . import BuildDataframe
 
