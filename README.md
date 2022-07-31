@@ -1,4 +1,4 @@
-# [Androgen receptor clusters - world map (4654 genomes)](https://engelanna-androgen-receptor-cl-build-streamlit-main-page-8pco88.streamlitapp.com/)
+# Androgen receptor clusters - world [map](https://engelanna-androgen-receptor-cl-build-streamlit-main-page-8pco88.streamlitapp.com/) (4654 genomes)
 
 An ongoing exploration of androgen receptors from publicly accessible genomes.
 
@@ -7,6 +7,7 @@ An ongoing exploration of androgen receptors from publicly accessible genomes.
 
 [Phase 2: Clustering with MMseqs2](#phase-2-clustering-with-mmseqs2)
 
+[References](#references)
 
 ---
 
