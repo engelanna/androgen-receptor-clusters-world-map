@@ -1,10 +1,10 @@
-# 'World map' of androgen receptor clusters (4654 genomes)
+# Androgen receptor clusters - world map (4654 genomes)
 
 An ongoing exploration of androgen receptors from publicly accessible genomes.
 - the current state is a map of clusters here
 
 # Table of Contents
-[Phase 1: Data acquisition & cleaning](#phase-1-data-acquisition--cleaning)
+[Phase 1: Data acquisition and cleaning](#phase-1-data-acquisition--cleaning)
 
 [Phase 2: Clustering with MMseqs2](#phase-2-clustering-with-mmseqs2)
 

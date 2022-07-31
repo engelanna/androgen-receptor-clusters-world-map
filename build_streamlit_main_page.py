@@ -13,7 +13,9 @@ class BuildStreamlitMainPage:
     def __call__(self):
         st.set_page_config(layout="wide")
 
-        st.subheader("Androgen receptor clusters - world map of (4654 genomes)")
+        st.subheader(
+            "[Androgen receptor clusters - world map (4654 genomes)](https://github.com/engelanna/androgen-receptor-clustering)",
+        )
 
         minimum_sequence_identity = st.selectbox(
             label="Minimum identity to cluster",
