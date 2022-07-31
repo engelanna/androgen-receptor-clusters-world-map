@@ -44,11 +44,11 @@ class BuildStreamlitMainPage:
         st.text("")
         st.text("")
         st.text(
-            "[trivium] On average, 2 random Africans are more genetically diverse, "
+            "#trivium On average, 2 random Africans are more genetically diverse, "
             "than 2 random people picked from anywhere in the whole world."
         )
         st.text(
-            "[caveat] That being said, don't trust the Gambia data too much, "
+            "#caveat That being said, don't trust the Gambia data too much, "
             """it was awfully low coverage."""
         )
 
