@@ -1,7 +1,7 @@
 # Androgen receptor clusters: world map (4654 genomes)
 
 Part of an ongoing exploration of androgen receptors from publicly available genomes. 
-<br>The map should be available [here](https://engelanna-androgen-receptor-cl-build-streamlit-main-page-bje6e5.streamlitapp.com/).
+<br>The resultant map should be available [here](https://engelanna-androgen-receptor-cl-build-streamlit-main-page-bje6e5.streamlitapp.com/).
 
 ## Table of Contents
 [Intro: Why care about the androgen receptor?](#why-care-about-the-androgen-receptor)
@@ -9,6 +9,8 @@ Part of an ongoing exploration of androgen receptors from publicly available gen
 [Phase 1: Data acquisition and cleaning](#phase-1-data-acquisition--cleaning)
 
 [Phase 2: Clustering with many-against-many sequence searching](#phase-2-clustering-by-many-against-many-sequence-searching)
+
+[Phase 3: Post-processing: preparation for display](#phase-3-post-processing-preparation-for-display)
 
 [References](#references)
 
@@ -26,6 +28,8 @@ That's a lot of suffering in one tiny protein, whose dangerous mutations - in th
 
 ## Phase 1: Data acquisition & cleaning
 
+Links in the charts below will take you to the relevant files.
+
 ```mermaid
 graph TD
     A(1: <a href='https://github.com/engelanna/androgen-receptor-clustering/blob/main/assets/txt/download_bam_files_input_urls.txt'>List</a> of 4654 <a href='https://www.internationalgenome.org/'>International Genome Sample Resource</a> .cram files) -.->|samtools view: <a href='https://github.com/engelanna/androgen-receptor-clustering/blob/main/scripts/_010_download_bam_files.py#L20'> scope the downloads</a> to just the androgen receptors| B
@@ -34,8 +38,9 @@ graph TD
     
     C(3: Androgen receptor .bam files<br>with PROPER headers) -.->|samtools mpileup + bcftools + vcf2fq|D
     
-    D(4: .fastq files) -.->|seqtk| E
-    E(5. .fasta consensus files)
+    D(4: .fastq files) -.->|seqtk:<br>downcase < Q20 bases| E(5: .fasta consensus files<br>= clustering input)
+
+    E -.->|seqtk:<br>downcase < Q20 bases| F(6: many-against-many<br>sequence searching: <a href='https://github.com/soedinglab/MMseqs2'>MMseqs2</a>)
 ```
 
 ---
@@ -99,7 +104,17 @@ n = 4654
 | 99.98% | 61:11 | -//- |
 | 99.99% | 67:09 | 9G |
 
+## Phase 3: Post-processing: preparation for display
 
+```mermaid
+graph TD
+    E(6: many-against-many<br>sequence searching: <a href='https://github.com/soedinglab/MMseqs2'>MMseqs2</a>) -.-> F
+
+    F(7: .tsv <a href='https://github.com/engelanna/androgen-receptor-clusters-world-map/tree/main/assets/tsv/clustering_output'>clustering output</a>) -.-> |<a href='https://github.com/engelanna/androgen-receptor-clusters-world-map/blob/main/scripts/_060_clustering_results_to_map_dataframes.py'>assemble</a> dataframes via pandas| G(.tsv <a href='https://github.com/engelanna/androgen-receptor-clusters-world-map/tree/main/assets/tsv/map_ready_dataframes'>map-ready dataframes</a>)
+
+    G(8: show dataframes on <a href='https://engelanna-androgen-receptor-cl-build-streamlit-main-page-bje6e5.streamlitapp.com/'>the map</a>)
+
+```
 
 ## References:
 - [A global reference for human genetic variation](http://www.nature.com/nature/journal/v526/n7571/full/nature15393.html), The 1000 Genomes Project Consortium, Nature 526, 68-74 (01 October 2015) doi:10.1038/nature15393, which provided the following:
