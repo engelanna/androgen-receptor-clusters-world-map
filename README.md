@@ -91,26 +91,26 @@ Approx processing time
 .995 
 n = 4654
 
-| Minimum sequence identity | Approximate run time | Estimated memory consumption |
-|-:|:-|:-|
-| 99.5% | 25:24 | 8G |
-| 99.6% | 27:41 | -//- |
-| 99.7% | 33:51 | -//- |
-| 99.8% | 39:30 | -//- |
-| 99.9% | 43:20 | -//- |
-| 99.95% | 50:24 | -//- |
-| 99.96% | 49:48 | -//- |
-| 99.97% | 47:29 | -//- |
-| 99.98% | 61:11 | -//- |
-| 99.99% | 67:09 | 9G |
+| Minimum sequence identity | Cluster count | Approximate run time | Estimated memory consumption |
+|-:|:-|:-|-|
+| 99.5% | 231 |25:24 | 8G |
+| 99.6% | 256 |27:41 | -//- |
+| 99.7% | 289 |33:51 | -//- | 
+| 99.8% | 317 |39:30 | -//- | 
+| 99.9% | 428 |43:20 | -//- | 
+| 99.95% | 542 |50:24 | -//- | 
+| 99.96% | 566 |49:48 | -//- | 
+| 99.97% | 577 |47:29 | -//- | 
+| 99.98% | 646 |61:11 | -//- | 
+| 99.99% | 914 |67:09 | 9G | 
 
 ## Phase 3: Post-processing: preparation for display
 
 ```mermaid
-graph TD
+graph LR
     E(6: many-against-many<br>sequence searching: <a href='https://github.com/soedinglab/MMseqs2'>MMseqs2</a>) -.-> F
 
-    F(7: .tsv <a href='https://github.com/engelanna/androgen-receptor-clusters-world-map/tree/main/assets/tsv/clustering_output'>clustering output</a>) -.-> |<a href='https://github.com/engelanna/androgen-receptor-clusters-world-map/blob/main/scripts/_060_clustering_results_to_map_dataframes.py'>assemble</a> dataframes via pandas| G(.tsv <a href='https://github.com/engelanna/androgen-receptor-clusters-world-map/tree/main/assets/tsv/map_ready_dataframes'>map-ready dataframes</a>)
+    F(7: .tsv <a href='https://github.com/engelanna/androgen-receptor-clusters-world-map/tree/main/assets/tsv/clustering_output'>clustering output</a>) -.-> |<a href='https://github.com/engelanna/androgen-receptor-clusters-world-map/blob/main/scripts/_060_clustering_results_to_map_dataframes.py'>assemble</a> dataframes<br>via pandas| G(.tsv <a href='https://github.com/engelanna/androgen-receptor-clusters-world-map/tree/main/assets/tsv/map_ready_dataframes'>map-ready dataframes</a>)
 
     G(8: show dataframes on <a href='https://engelanna-androgen-receptor-cl-build-streamlit-main-page-bje6e5.streamlitapp.com/'>the map</a>)
 
