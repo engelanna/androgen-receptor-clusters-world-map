@@ -1,7 +1,7 @@
 # Androgen receptor clusters: world map (4654 genomes)
 
 Part of an ongoing exploration of androgen receptors from publicly available genomes. 
-<br>The resultant map should be available [here](https://engelanna-androgen-receptor-cl-build-streamlit-main-page-yuqwlx.streamlitapp.com/).
+<br>The resultant map should be available [here](https://engelanna-androgen-receptor-cl-build-streamlit-main-page-hdxnoc.streamlitapp.com/).
 
 ## Table of Contents
 [Intro: Why care about the androgen receptor?](#why-care-about-the-androgen-receptor)
@@ -85,7 +85,7 @@ graph LR
 
     F(7: .tsv <a href='https://github.com/engelanna/androgen-receptor-clusters-world-map/tree/main/assets/tsv/clustering_output'>clustering output</a>) -.-> |<a href='https://github.com/engelanna/androgen-receptor-clusters-world-map/blob/main/scripts/_060_clustering_results_to_map_dataframes.py'>assemble</a> dataframes<br>via pandas| G(.tsv <a href='https://github.com/engelanna/androgen-receptor-clusters-world-map/tree/main/assets/tsv/map_ready_dataframes'>map-ready dataframes</a>)
 
-    G(8: show dataframes on <a href='https://engelanna-androgen-receptor-cl-build-streamlit-main-page-yuqwlx.streamlitapp.com/'>the map</a>:<br>streamlit + pydeck)
+    G(8: show dataframes on <a href='https://engelanna-androgen-receptor-cl-build-streamlit-main-page-hdxnoc.streamlitapp.com/'>the map</a>:<br>streamlit + pydeck)
 
 ```
 
