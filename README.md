@@ -44,7 +44,6 @@ graph TD
 ## Phase 2: Clustering by many-against-many sequence searching
 
 The only variable was `--min-seq-id` (minimum sequence identity), others were left at default values.
-The version 
 
 ### Step 1/3: Prefilter
 
