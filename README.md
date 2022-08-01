@@ -56,7 +56,7 @@ C -.-> | penalize Poisson neighbours |D(millions of alignments<br>drop to mere t
 ### Step 2/3: Alignment
 ```mermaid
 graph LR
-E(parallel<br>Smith-Waterman<br>local alignment) -.-> F(ready for clustering)
+E(Smith-Waterman alignment) -.-> |in parallel| F(ready for clustering)
 
 ```
 ### Step 3/3: Clustering
@@ -86,9 +86,7 @@ Approx processing time
 .995 
 n = 4654
 
-+(60×_)+_
-
-| Minimum sequence identity | Approx. run time | Estimated memory consumption |
+| Minimum sequence identity | Approximate run time | Estimated memory consumption |
 |-:|:-|:-|
 | 99.5% | 25:24 | 8G |
 | 99.6% | 27:41 | -//- |
@@ -97,9 +95,9 @@ n = 4654
 | 99.9% | 43:20 | -//- |
 | 99.95% | 50:24 | -//- |
 | 99.96% | 49:48 | -//- |
-| 99.97% | ... | -//- |
+| 99.97% | 47:29 | -//- |
 | 99.98% | 61:11 | -//- |
-| 99.99% | 91:15 | 9G |
+| 99.99% | 67:09 | 9G |
 
 
 
