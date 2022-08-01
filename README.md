@@ -16,8 +16,6 @@ Part of an ongoing exploration of androgen receptors from publicly available gen
 
 [References](#references)
 
----
-
 ## Why care about the androgen receptor?
 
 The androgen receptor (located on the X chromosome) is responsible for how thick one's bones get over the course of one's life (which includes bone density in old age, a major contributor to potentially deadly fractures), and how easily one puts on muscle. Significantly fewer than the average 22 polyglutamine repeats (CAGCAGCAG...) can kill males via prostate cancer (especially those of African descent).
@@ -25,8 +23,6 @@ The androgen receptor (located on the X chromosome) is responsible for how thick
 Significantly > 22 repeats (highest average: Thai people) can bring insufficient fetal masculinization of the brain's stria terminalis (leading to gender dysphoria at puberty onwards) or of the body (intersexualism), more commonly "just" resulting in fertility problems. Too many CAG repeats have also been linked to increased suicidal depression in teenagers (as well as left-handedness).
 
 That's a lot of suffering in one tiny protein, whose dangerous mutations - in the age of [CRISPR/Cas9](http://www.crisprtx.com/gene-editing/crispr-cas9) - may simply become editable out of the genome. But the AR needs to be better understood first. Of note, individuals possessing multiple X chromosomes (including most, but not all, females - cf. Turner syndrome) are an order of magnitude less affected by the aforementioned issues.
-
----
 
 ## Phase 1: Data acquisition & cleaning
 
@@ -44,8 +40,6 @@ graph TD
 
     E -.-> |clustering input| F(6: many-against-many<br>sequence searching: <a href='https://github.com/soedinglab/MMseqs2'>MMseqs2</a>)
 ```
-
----
 
 ## Phase 2: Clustering by many-against-many sequence searching
 
