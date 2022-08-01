@@ -10,7 +10,7 @@ Part of an ongoing exploration of androgen receptors from publicly available gen
 
 [Phase 2: Clustering with many-against-many sequence searching](#phase-2-clustering-by-many-against-many-sequence-searching)
 
-[Phase 3: Post-processing: preparation for display](#phase-3-post-processing-preparation-for-display)
+[Phase 3: Results summary and display](#phase-3-results-summary-and-display)
 
 [References](#references)
 
@@ -38,14 +38,17 @@ graph TD
     
     C(3: Androgen receptor .bam files<br>with PROPER headers) -.->|samtools mpileup + bcftools + vcf2fq|D
     
-    D(4: .fastq files) -.->|seqtk:<br>downcase < Q20 bases| E(5: .fasta consensus files<br>= clustering input)
+    D(4: .fastq files) -.->|seqtk while<br>downcasing < Q20 bases| E(5: .fasta consensus files)
 
-    E -.->|seqtk:<br>downcase < Q20 bases| F(6: many-against-many<br>sequence searching: <a href='https://github.com/soedinglab/MMseqs2'>MMseqs2</a>)
+    E -.-> |clustering input| F(6: many-against-many<br>sequence searching: <a href='https://github.com/soedinglab/MMseqs2'>MMseqs2</a>)
 ```
 
 ---
 
 ## Phase 2: Clustering by many-against-many sequence searching
+
+The only variable was `--min-seq-id` (minimum sequence identity), others were left at default values.
+The version 
 
 ### Step 1/3: Prefilter
 
@@ -70,26 +73,23 @@ graph LR
 E{Choice of algorithm} -.-> |No| F(Incremental greedy clustering:<br>CD-HIT / USEARCH / kClust)
 E -.-> |Yes| G(Greedy set cover)
 
-G -.-> |'Neighbour' defined by 2 thresholds<br>left at default values:<br>alignment coverage threshold: 0.8<br>e-value threshold: 0.001| H(At every step, make the sequence<br>with the most neighbours<br>a new cluster)
+G -.-> |'Neighbour' defined by 2 thresholds<br>left at default values:<br><br>alignment coverage threshold: 0.8<br>e-value threshold: 0.001| H(At every step, make the sequence<br>with the most neighbours<br>a new cluster)
+
 
 ```
-mmseqs easy-cluster ../androgen-receptor-clustering/assets/fasta/clustering_input/mmseqs_input.fasta min-seq-id-0.9998/clusterRes tmp --min-seq-id 0.9998 
+## Phase 3: Results summary and display
 
---min-seq-id to zwyczajowo 0.9
-understand the result: representative\tcluster_member
+```mermaid
+graph LR
+    E(6: many-against-many<br>sequence searching: <a href='https://github.com/soedinglab/MMseqs2'>MMseqs2</a>) -.-> F
 
-Gap open cost                       	aa:11,nucl:5
-Gap extension cost                  	aa:1,nucl:2
-Alphabet size                       	aa:21,nucl:5
-k-mers per sequence                 	21
-Adjusted k-mer length 17
-Clustering mode: Set Cover
-Number of clusters: 
-Estimated memory consumption: 8G
-Time: FIND THIS IN THE LOGS
-Approx processing time
-.995 
-n = 4654
+    F(7: .tsv <a href='https://github.com/engelanna/androgen-receptor-clusters-world-map/tree/main/assets/tsv/clustering_output'>clustering output</a>) -.-> |<a href='https://github.com/engelanna/androgen-receptor-clusters-world-map/blob/main/scripts/_060_clustering_results_to_map_dataframes.py'>assemble</a> dataframes<br>via pandas| G(.tsv <a href='https://github.com/engelanna/androgen-receptor-clusters-world-map/tree/main/assets/tsv/map_ready_dataframes'>map-ready dataframes</a>)
+
+    G(8: show dataframes on <a href='https://engelanna-androgen-receptor-cl-build-streamlit-main-page-bje6e5.streamlitapp.com/'>the map</a>:<br>streamlit + pydeck)
+
+```
+
+### Summary of results
 
 | Minimum sequence identity | Cluster count | Approximate run time | Estimated memory consumption |
 |-:|:-|:-|-|
@@ -104,17 +104,6 @@ n = 4654
 | 99.98% | 646 |61:11 | -//- | 
 | 99.99% | 914 |67:09 | 9G | 
 
-## Phase 3: Post-processing: preparation for display
-
-```mermaid
-graph LR
-    E(6: many-against-many<br>sequence searching: <a href='https://github.com/soedinglab/MMseqs2'>MMseqs2</a>) -.-> F
-
-    F(7: .tsv <a href='https://github.com/engelanna/androgen-receptor-clusters-world-map/tree/main/assets/tsv/clustering_output'>clustering output</a>) -.-> |<a href='https://github.com/engelanna/androgen-receptor-clusters-world-map/blob/main/scripts/_060_clustering_results_to_map_dataframes.py'>assemble</a> dataframes<br>via pandas| G(.tsv <a href='https://github.com/engelanna/androgen-receptor-clusters-world-map/tree/main/assets/tsv/map_ready_dataframes'>map-ready dataframes</a>)
-
-    G(8: show dataframes on <a href='https://engelanna-androgen-receptor-cl-build-streamlit-main-page-bje6e5.streamlitapp.com/'>the map</a>)
-
-```
 
 ## References:
 - [A global reference for human genetic variation](http://www.nature.com/nature/journal/v526/n7571/full/nature15393.html), The 1000 Genomes Project Consortium, Nature 526, 68-74 (01 October 2015) doi:10.1038/nature15393, which provided the following:
